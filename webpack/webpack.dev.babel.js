@@ -6,6 +6,7 @@ module.exports = require('./webpack.base.babel')({
   entry: [
   // disabled eventsource-polyfill because who the fuck uses IE to dev
     'webpack-hot-middleware/client?reload=true',
+    'babel-polyfill',
     path.join(process.cwd(), 'app/app.js')
   ],
 
